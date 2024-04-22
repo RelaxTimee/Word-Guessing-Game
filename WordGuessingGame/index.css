@@ -1,0 +1,132 @@
+/* General CSS for the game */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap');
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Jersey 15", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #f8f9fa; /* Change background color */
+  margin: 0;
+  padding: 0 ;
+}
+
+video#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px; /* Add margin below the heading */
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px; /* Add margin below regular text */
+}
+
+h3{
+  color: #666;
+  font-size: 24px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color:#28a745; /* Change button background color */
+  color: white; /* Change button text color */
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Add hover effect */
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: #006400; /* Change button background color on hover */
+}
+
+#wordDisplay {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333; /* Change text color */
+}
+
+#resultDisplay {
+  margin-bottom: 10px;
+}
+
+#score {
+  font-weight: bold;
+  color: #28a745; /* Change score text color */
+}
+
+#hintCount {
+  font-weight: bold;
+  color: #28a745; /* Change hint count text color */
+}
+
+/* Media query for mobile devices (max-width 600px) */
+@media only screen and (max-width: 600px) {
+  /* Adjust font sizes and spacing for better readability on smaller screens */
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #wordDisplay {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #resultDisplay {
+    margin-bottom: 5px;
+  }
+
+  #score {
+    font-size: 16px;
+  }
+
+  #hintCount {
+    font-size: 16px;
+  }
+}

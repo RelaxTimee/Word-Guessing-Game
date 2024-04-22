@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="img/BG.mp4" type="video/mp4">
+    </video>
+    <div class="action-menu">
+        <button class="action-menu__button">
+            Category <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="action-dropdown hide">
+            <button onclick="startNewGame('fruits')">Fruits</button>
+            <button onclick="startNewGame('countries')">Countries</button>
+            <button onclick="startNewGame('animals')">Animals</button>
+        </div>
+      </div>
+    <h1>Word Guessing Game</h1>
+    <h3>Guess the word:</h3>
+    <p id="wordDisplay"></p>
+    <input type="text" id="guessInput"><br>
+    <div>
+        <span><button onclick="checkGuess()">Guess !!</button></span>
+        <span><button onclick="Nextword()">Nextword</button></span>
+        <span><button id="hintButton" onclick="giveHint()">Hint</button></span>
+
+    </div>
+    <div>
+        <span> <button onclick="resetGame()">Start New Game !?  </button></span>
+    </div>
+   
+    
+
+
+    <h1> Enter a word for your friends to guess!!</h1>
+    <button onclick="startCustomGame()">Start Custom Game</button>
+
+    <!-- เพิ่มปุ่มเพื่อเปลี่ยนกลุ่มคำที่จะทาย -->
+    <p id="resultDisplay"></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>Number of hints available: <span id="hintCount">0</span></p>
+    <input type="text" id="customWordInput" placeholder="Enter your word">
+
+    <script src="index.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>
+
+
