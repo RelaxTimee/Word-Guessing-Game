@@ -25,7 +25,16 @@
     <h1>Word Guessing Game</h1>
     <h3>Guess the word:</h3>
     <p id="wordDisplay"></p>
-    <input type="text" id="guessInput"><br>
+    <input type="text" id="guessInput">
+    <!-- Hp -->
+    <div class="HpBar">
+        <div class="prog-bar">
+            <img src="img/heart.png" alt="" id="heart">
+            <div class="prog"></div>
+        </div>    
+    </div>
+    <!-- /Hp -->
+    <br>
     <div>
         <span><button onclick="checkGuess()">Guess !!</button></span>
         <span><button onclick="Nextword()">Nextword</button></span>

@@ -71,11 +71,11 @@ body {
   @media only screen and (max-width: 600px) {
     /* ปรับขนาดและตำแหน่งเมนูสำหรับหน้าจอขนาดเล็ก */
     .action-menu {
-      width: 100%; /* เมนูเต็มหน้าจอแนวนอนบนมือถือ */
-      position: static; /* ยกเลิกการ fixed  */
-      top: auto; /* ยกเลิกการกำหนดค่า top */
-      left: 0; /* เริ่มต้นที่ขอบซ้าย */
-      margin: 40px auto; /* เพิ่มระยะห่างและจัดวางตรงกลาง */
+      width: 100%; 
+      position: static;
+      top: auto; 
+      left: 0; 
+      margin: 40px auto; 
     }
     .action-menu .action-menu__button {
       padding: 10px;

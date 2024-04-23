@@ -9,4 +9,3 @@ actionBtn.addEventListener("click", (e) => {
 window.addEventListener("click", () => {
   dropdown.classList.add("hide");
 });
-
