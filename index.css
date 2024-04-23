@@ -151,7 +151,6 @@ button:hover {
 
     .HpBar{
         position: fixed;
-        top: 20px; /* ย้ายขึ้นไป */
         right: 20px; /* ปรับขอบเขตของตำแหน่งของคำนวณ */
         transform: none; /* ลบการแปลง */
     }
@@ -175,65 +174,8 @@ button:hover {
         left: -13px;
         top: -7px;
         width: 40px;
-        margin-top: -830px;
+       
     } 
 }
 
-/* iPhone SE */
-@media only screen and (max-width: 320px) {
-    body {
-        font-size: 14px;
-    }
 
-    h1 {
-        font-size: 20px;
-        margin-top: 10px; /* เพิ่มระยะห่างด้านบนของหัวข้อ */
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    input[type="text"] {
-        padding: 6px;
-        font-size: 12px;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-
-    #wordDisplay {
-        font-size: 18px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    #resultDisplay {
-        margin-bottom: 3px;
-    }
-
-    #score, #hintCount {
-        font-size: 14px;
-    }
-
-    .HpBar {
-        position: absolute;
-        bottom: 50px;
-        right: 100px;
-    }
-    
-    .prog-bar {
-        width: 275px;
-        height: 45px;
-        border: 2px solid black;
-        border-radius: 1pc;
-        position: absolute; /* เปลี่ยนจาก position: fixed; เป็น position: absolute; */
-    }
-    
-
-    #heart {
-        width: 32px;
-    }
-}
